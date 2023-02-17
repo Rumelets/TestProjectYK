@@ -7,5 +7,22 @@ C помощью цикла записать в массив числа от 1 �
 
 
 public class test9_array {
+    public static void main(String [] args){
+        int[] array = new int [10];
+        int y = 0;
+        for(int x = 1;x<=10;x++){
+            array[y]=x;
+            y = x;
+        }
+        for(int f =0;f<=9;f++) {
+            if(f==9) {
+                System.out.print(array[f]+"]");
+            }else if(f==0) {
+                System.out.print("["+array[f]+", ");
+            }else{
+                System.out.print(array[f]+", ");
+            }
+        }
+    }
 
 }

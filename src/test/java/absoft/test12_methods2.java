@@ -9,6 +9,39 @@ package absoft;
 Если имя не "Alex", "John" или "Stan" - вывести в консоль "Sorry, name was not found"
  */
 
+import java.util.Scanner;
+
 public class test12_methods2 {
+    public static String name(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String name = sc.nextLine();
+        if(name.equals("Alex")||name.equals("John")||name.equals("Stan")){
+            System.out.println("Hello "+name);
+        }else{
+            System.out.println("Sorry, name was not found");
+        }
+        return name;
+    }
+    public static void seat(String name){
+        if(name.equals("Alex")||name.equals("John")||name.equals("Stan")) {
+            switch (name) {
+                case "Alex":
+                    System.out.println("Your seat is " + 1);
+                    break;
+                case "John":
+                    System.out.println("Your seat is " + 2);
+                    break;
+                case "Stan":
+                    System.out.println("Your seat is " + 3);
+                    break;
+            }
+        }else{
+            return;
+        }
+    }
+    public static void main(String [] args){
+        seat(name());
+    }
 
 }
