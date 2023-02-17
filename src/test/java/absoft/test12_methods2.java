@@ -36,8 +36,6 @@ public class test12_methods2 {
                     System.out.println("Your seat is " + 3);
                     break;
             }
-        }else{
-            return;
         }
     }
     public static void main(String [] args){
