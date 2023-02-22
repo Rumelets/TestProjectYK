@@ -1,8 +1,5 @@
 package absoft;
-
-import static absoft.test13_input.name;
-import static absoft.test13_input.qty;
-import static absoft.test13_input.price;
+import static absoft.test13_input.*;
 
 public class test13_total {
     public static void total(){
