@@ -7,12 +7,12 @@ C помощью цикла записать в массив числа от 1 �
 
 
 public class test9_array {
+    static int[] array = new int[10];
+    static int y = 0;
     public static void main(String [] args){
-        int[] array = new int [10];
-        int y = 0;
         for(int x = 1;x<=10;x++){
             array[y]=x;
-            y = x;
+            y++;
         }
         for(int f =0;f<=9;f++) {
             if(f==9) {

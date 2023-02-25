@@ -15,6 +15,8 @@ public class test8_for_2 {
                 System.out.println(x);
             }}else{
                 System.out.println("Ошибка, введите число от 1 до 20");
+                System.exit(1);
             }
+        sc.close();
         }
     }
