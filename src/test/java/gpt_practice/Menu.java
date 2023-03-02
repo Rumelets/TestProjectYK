@@ -44,12 +44,12 @@ public class Menu {
                         contact2 = contact1;
                         isDeleted = true;
                         System.out.println("Контакт с номером " + num + " удален");
-                    }else{
-                        System.out.println("Номер контакта не найден");
                     }
                 }
                 if(isDeleted) {
                     contactList.removeContact(contact2);
+                }else{
+                    System.out.println("Номер контакта не найден");
                 }
                 break;
             case 4:
