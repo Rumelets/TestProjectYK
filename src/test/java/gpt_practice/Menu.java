@@ -23,7 +23,6 @@ public class Menu {
         switch (choice){
             case 1:
                 Contact contact = new Contact(firstname(), lastname(), email(), number());
-                System.out.println(contact);
                 contactList.addContact(contact);
                 System.out.println("Контакт добавлен");
                 break;
