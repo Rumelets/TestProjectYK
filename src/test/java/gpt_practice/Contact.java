@@ -1,12 +1,12 @@
 package gpt_practice;
 
 public class Contact {
-//    private Long contactId;
     private String firstname;
     private String lastname;
     private String email;
     private long number;
 
+    //Конструктор класса
     public Contact(/*Long contactId, */String firstname, String lastname, String email, long number) {
   //      this.contactId = contactId;
         this.firstname = firstname;
@@ -17,13 +17,8 @@ public class Contact {
         this.email = email;
         this.number = number;
     }
- /*   public Long getContacId(){
-        return contactId;
-    }
-    public void setContactId(Long contactId){
-        this.contactId = contactId;
-    }
-    */
+
+    //Геттеры и сеттеры
     public String getFirstname(){
         return firstname;
     }

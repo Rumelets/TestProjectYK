@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactList {
-    private List<Contact> contacts;
-
-    public ContactList() {
-        contacts = new ArrayList<>();
+    //Обьявление массива контакта
+    private final List<Contact> contacts;
+    public ContactList(){
+        this.contacts = new ArrayList<>();
     }
 
-    public void addContact(Contact contact) {
-        contacts.add(contact);
+    public void addContact(Contact contact){
+        this.contacts.add(contact);
     }
 
-    public void removeContact(Contact contact) {
-        contacts.remove(contact);
+    public void removeContact(Contact contact){
+        this.contacts.remove(contact);
     }
 
-    public List<Contact> getContacts() {
-        return contacts;
+    public List<Contact> getAllContacts(){
+        return this.contacts;
     }
 }

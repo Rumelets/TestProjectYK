@@ -24,7 +24,6 @@ public class test12_methods2 {
         return name;
     }
     public static void seat(String name){
-        if(name.equals("Alex")||name.equals("John")||name.equals("Stan")) {
             switch (name) {
                 case "Alex":
                     System.out.println("Your seat is " + 1);
@@ -36,7 +35,6 @@ public class test12_methods2 {
                     System.out.println("Your seat is " + 3);
                     break;
             }
-        }
     }
     public static void main(String [] args){
         seat(name());
